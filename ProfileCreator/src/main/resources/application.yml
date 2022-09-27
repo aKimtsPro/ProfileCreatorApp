@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/profileDB
+    username: postgres
+    password: Test1234=
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+
+application:
+  jwt:
+    prefix: "Bearer "
+    header: "Authorization"
+    key: "<J7Fz~X>-/co_*Y"
+    expires: 846000000
